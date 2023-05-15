@@ -6,8 +6,8 @@ class BasePage():
     def encontrar_elemento(self, locator):
         return self.driver.find_element(*locator)
     
-    def abrir(self, url):
-        self.driver.get(url)
+    def abrir(self):
+        self.driver.get(self.url)
 
     def get_titulo(self):
         return self.driver.title

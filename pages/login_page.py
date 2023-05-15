@@ -10,7 +10,7 @@ class LoginPage(BasePage):
         self.escrever(self.locator.NOME, nome)
 
     def escrever_senha(self, senha):
-        self.escrever(self.locator.SENHA)
+        self.escrever(self.locator.SENHA, senha)
 
     def clicar_submit(self):
         self.clicar(self.locator.SUBMIT)
