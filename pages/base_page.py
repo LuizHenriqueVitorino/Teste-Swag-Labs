@@ -1,9 +1,14 @@
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 class BasePage():
     def __init__(self, driver, base_url='https://www.saucedemo.com/'):
         self.url = base_url
         self.driver = driver
+        self.wdw = WebDriverWait(driver, 10)
 
     def encontrar_elemento(self, locator):
+        self.wdw.until(EC.element_to_be_clickable(locator), "Não conseguimos encontrar o elemento!")
         return self.driver.find_element(*locator)
     
     def abrir(self):

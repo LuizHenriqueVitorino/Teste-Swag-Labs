@@ -7,3 +7,6 @@ class LoginLocators():
     USUARIOS = (By.ID, "login_credentials")
     SENHAS = (By.CLASS_NAME, "login_password")
 
+class MainLocators():
+    MENU = (By.ID, "react-burger-menu-btn")
+    LOGOUT = (By.ID, "logout_sidebar_link")
