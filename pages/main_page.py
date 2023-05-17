@@ -7,7 +7,7 @@ class MainPage(BasePage):
         self.locator = MainLocators
 
     def clicar_menu(self):
-        menu = self.clicar(self.locator.MENU)
+        self.clicar(self.locator.MENU)
 
     def logout(self):
         self.clicar_menu()
