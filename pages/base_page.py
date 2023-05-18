@@ -11,6 +11,10 @@ class BasePage():
         self.wdw.until(EC.element_to_be_clickable(locator), "Não conseguimos encontrar o elemento!")
         return self.driver.find_element(*locator)
     
+    def encontrar_elementos(self, locator):
+        self.wdw.until(EC.element_to_be_clickable(locator), "Não conseguimos encontrar os elementos!")
+        return self.driver.find_elements(*locator)
+    
     def abrir(self):
         self.driver.get(self.url)
 
