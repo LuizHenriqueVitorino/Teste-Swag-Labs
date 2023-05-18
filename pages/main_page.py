@@ -6,6 +6,9 @@ class MainPage(BasePage):
         super().__init__(driver)
         self.locator = MainLocators
 
+    def clicar_cart(self):
+        self.clicar(self.locator.CART)
+
     def clicar_menu(self):
         self.clicar(self.locator.MENU)
 

@@ -1,5 +1,5 @@
 from pages.login_page import LoginPage
-from testes.base_test import BaseTest
+from base_test import BaseTest
 
 class TestLoginPage(BaseTest):
     def test_login(self):
@@ -7,5 +7,4 @@ class TestLoginPage(BaseTest):
         page.abrir()
         page.login(nome='standard_user', senha='secret_sauce')
 
-        print(self.driver.current_url)
         assert "inventory" in self.driver.current_url

@@ -10,3 +10,4 @@ class LoginLocators():
 class MainLocators():
     MENU = (By.ID, "react-burger-menu-btn")
     LOGOUT = (By.ID, "logout_sidebar_link")
+    CART = (By.ID, "shopping_cart_container")
